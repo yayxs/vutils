@@ -2,8 +2,29 @@
   "name": "vast-utils",
   "version": "0.1.0",
   "description": "a lib",
-  "main": "index.js",
-  "repository": "https://github.com/yayxs/vast-utils.git",
+  "main": "./dist/vast-utils.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yayxs/vast-utils.git"
+  },
+  "keywords": [
+    "utils",
+    "tools",
+    "webpack",
+    "webpack-library",
+    "bundling",
+    "library"
+  ],
   "author": "leaderywl@163.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0"
+  }
 }
