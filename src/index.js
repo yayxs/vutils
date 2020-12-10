@@ -1,9 +1,3 @@
-function awesomeArray(){
-    return {
-        isArray:()=>{
-            return true
-        }
-    }
-}
+const r = require.context('./', true, /^\.\/.+\/.+\.js$/);
 
-export default awesomeArray();
+module.exports = {}
