@@ -1,0 +1,24 @@
+language: node_js
+branches:
+  only:
+    - master
+node_js:
+  - lts/*
+install:
+  - yarn
+script:
+  - yarn build
+cache: yarn
+before_deploy:
+  - npm run build
+  - rm -rf ./src ./test ./script ./.babelrc
+deploy:
+  - provider: pages
+    local-dir: docs
+    github-token: $GITHUB_TOKEN
+    skip-cleanup: true
+    keep-history: true
+  - provider: npm
+    email:
+    api_key: $NPM_TOKEN
+    skip-cleanup: true

@@ -1,7 +1,7 @@
 {
   "name": "vast-utils",
   "version": "0.1.0",
-  "description": "a lib",
+  "description": "A JavaScript utils tool library using Rollup",
   "main": "dist/vast-utils.cjs.js",
   "module": "dist/vast-utils.esm.js",
   "browser": "dist/vast-utils.umd.js",
@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/yayxs/vast-utils.git"
   },
-  "author": "yayxs",
+  "author": "yayxs <youngwanlia@gmail.com> (https://github.com/yayxs/frontend-thick-talk)",
   "homepage": "https://github.com/yayxs/vast-utils",
   "license": "MIT",
   "devDependencies": {
