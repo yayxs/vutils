@@ -11,7 +11,7 @@ script:
 cache: yarn
 before_deploy:
   - npm run build
-  - rm -rf ./src ./test ./script ./.babelrc
+  - rm -rf ./src ./test ./script
 deploy:
   - provider: pages
     local-dir: docs
@@ -19,6 +19,6 @@ deploy:
     skip-cleanup: true
     keep-history: true
   - provider: npm
-    email:
+    email: youngwanlia@gmail.com
     api_key: $NPM_TOKEN
     skip-cleanup: true
