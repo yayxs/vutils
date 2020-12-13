@@ -1,8 +1,33 @@
-## 安装
+## 克隆
 
 ```sh
 # 克隆项目（vast-utils）
 git clone https://github.com/yayxs/vast-utils
+```
+
+
+## Use in vue project
+
+1. 安装`vast-utils`
+```sh
+yarn add vast-utils
+```
+2. 在项目中导入
+
+```js
+import { firstTestUtil } from 'vast-utils'
+```
+3. 使用
+
+```js
+ data() {
+      return {
+        utilsResult: false,
+      }
+    },
+    mounted() {
+      this.utilsResult = firstTestUtil()
+    },
 ```
 
 ## Git 提交规范
